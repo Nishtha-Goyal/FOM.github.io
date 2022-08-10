@@ -1,0 +1,119 @@
+                                             /* CSS FOR NAVBAR */
+  header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: lightblue;
+    box-shadow: 0px -8px 24px #000000;  
+}
+.topmost{
+    width: 100%;
+
+}
+.topmost::after{
+    content: "";
+    display: block;
+    line-height: 10%;
+}
+a
+{
+    text-decoration: none;
+}
+.nav2,.nav3
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+body{
+    font-family: 'Poppin' , sans-serif;
+    margin:0;
+}
+.search-container button:hover{
+    background: #ccc;;
+}
+.search-container input[type=text]{
+    width: 30vw;
+    height: 20px;
+    min-width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 0px;
+}
+
+.search-button>button{
+    line-height: 34px;
+    font-size: 26px;
+    border-radius: 0px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.search-button>button:hover{
+    background: #ccc;;
+}
+.fa-shopping-cart{
+    height: 30px;
+    width:30px;
+    color: rgba(0, 0, 0);
+}
+.fa-shopping-cart:hover{
+    cursor: pointer;
+}
+.fa-heart{
+    height: 30px;
+    width:30px;
+    color: rgba(0, 0, 0);
+}
+                                       /* css for images */
+.photo {
+  display: flex;
+  flex-direction: row;
+     flex-wrap:wrap ;
+     justify-content: space-evenly;
+}
+
+.photo >div {
+  background-color:lightblue;
+  margin: 10px;
+  padding: 20px;
+
+}
+.photo>div>img
+{
+	  height: 200px;
+   width: 200px
+}
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    align-items: center;
+    margin-top: -80px;
+    margin-left: 100px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image:hover >img {
+    opacity: 0.5;
+  }
+  
+  .image:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    padding: 5px 5px; 
+  }
